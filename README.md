@@ -1,203 +1,236 @@
 <div align="center">
 
-# ⚙️ THETA-DOMAIN ENGINE REASONING KERNEL  
-### 🧠 *Think first. Simulate later.*
+# ⚙️ Theta-Domain Energy–Inertia Gate Mapper  
+### 🧠 Think first. Simulate later.
 
-🔍 **Early Direction Validation**  
-⚡ **Real-time Friendly**  
-❌ **Not CFD / GT-Power Replacement**  
-✅ **Trend • Risk • Boundary Intelligence**
+🔍 Early direction validation  
+⚡ Real-time friendly  
+❌ Not CFD / GT-Power replacement  
+✅ Trend • Risk • Boundary intelligence
 
 </div>
 
 ---
 
-# 🔨 LEGACY SUMMARY (≈20%) — WHY THIS EXISTS
+## 👀 Read this first (simple Hinglish – 2 minute version)
 
-> ❌ This is NOT an engine simulator  
-> ✅ This is a **direction & reasoning layer**
+Simple shabdon mein:
 
-Originally, this project was built to solve one industry problem:
+- Tum engine design kar rahe ho  
+- Tum power badhate ja rahe ho  
+- Ek point ke baad engine aur fast nahi hota  
+- Balki **zyada resist** karne lagta hai  
 
-> **“Wrong engine ideas are discovered too late.”**
+❓ Sawaal:
+> **“Wo point kaunsa hai jahan power dena bekaar ho jata hai?”**
 
-Typical flow:
-- Idea → GT-Power / ANSYS  
-- Weeks of simulation  
-- ❌ Direction turns out wrong  
+👉 **Yahi kaam karta hai yeh kernel.**
 
-This kernel was designed to sit **before heavy tools**, using:
-- θ-domain (crank-angle) reasoning
-- Reduced-order physics
-- Trend-first philosophy
+- Yeh exact number nahi batata  
+- Yeh **direction** batata hai  
+- Yeh batata hai:
+  - ❌ yahan aage mat jao  
+  - ⚠️ yahan naya mechanism chahiye  
+  - ✅ yahan idea abhi safe hai  
 
-That foundation remains unchanged.
-
----
-
-# 🧠 NEW RESEARCH CORE (≈80%) — WHAT WE DISCOVERED
-
-## 🔑 Central Question
-
-> **What happens when energy keeps increasing,  
-> but motion becomes harder instead of easier?**
-
-This research reframes engine analysis as an  
-**energy → inertia → resistance mapping problem**,  
-resolved **per crank angle (θ)**.
+Matlab:
+> **Simulation se pehle sochne ka tool**
 
 ---
 
-## 🔄 SYSTEM FLOW (VISUAL)
-REAL INPUTS (RPM / Throttle) ↓ LIVE DASHBOARD (Graphs • Alerts • Controls) ↓ θ-DOMAIN PHYSICS KERNEL (Energy → Inertia → Resistance) ↓ GATE / SATURATION SIGNALS
+## 🔨 Why this project exists (legacy summary ~20%)
+
+Industry mein aksar hota kya hai:
+
+- Idea aata hai  
+- Direct GT-Power / ANSYS chala diya  
+- Weeks / months lag jaate hain  
+- Baad mein pata chalta hai → ❌ direction hi galat thi  
+
+Is project ka original goal tha:
+> **Galat ideas ko jaldi maarna.**
+
+Isliye:
+- θ-domain (crank-angle based) approach  
+- Reduced-order physics  
+- Trend first, number later  
+
+Yeh foundation abhi bhi same hai.
 
 ---
 
-## ⚙️ CORE DISCOVERY (IN ONE LINE)
+# 🧠 New research core (~80%) — What we discovered
 
-> **Increasing energy does not always increase motion.  
-Beyond a point, it increases resistance faster than output.**
+## 🔑 Central idea
 
-This turning point is what the kernel identifies.
+> **Energy badhane se hamesha output nahi badhta.  
+Ek point ke baad energy resistance ban jaati hai.**
 
----
+Is project mein engine ko is tarah dekha gaya hai:
+Energy  →  Inertia  →  Resistance  →  Saturation  →  GATE
 
-## 🧠 KEY MECHANISM (STEP-BY-STEP)
-1. Energy is injected into constrained motion
-
-
-2. Momentum accumulation increases
-
-
-3. Effective inertia rises sharply
-
-
-4. Mechanical resistance dominates
-
-
-5. Motion saturates
-
-
-6. A GATE is reached
-
-The kernel does **not** break physics.  
-It **reveals where physics stops scaling linearly**.
+Yeh kernel **isi gate ko identify karta hai**.
 
 ---
 
-## 📌 IMPORTANT DEFINITIONS (RESEARCH-SAFE)
+## 🔄 System flow (clear picture)
+Real Inputs (RPM / Throttle) ↓ Live Dashboard (Graphs • Alerts • Controls) ↓ Theta-Domain Physics Kernel (Energy → Inertia → Resistance) ↓ Gate / Saturation Signals
 
-| Term | Meaning |
+---
+
+## 🛑 Gate ka matlab (desi example)
+
+Socho:
+- Cycle ko haath se ghumao → easy  
+- Thoda weight daalo → thoda mushkil  
+- Bahut zyada weight → cycle ghoomna band  
+
+🧠 **Gate wahi point hai**
+jahan aur zor lagane ka fayda nahi hota.
+
+Yeh kernel wahi 🚦 flag laga deta hai.
+
+---
+
+## ⚙️ Step-by-step mechanism
+
+1. Energy constrained motion mein inject hoti hai  
+2. Momentum accumulate hota hai  
+3. Effective inertia sharply badhti hai  
+4. Mechanical resistance dominate karne lagta hai  
+5. Output saturate hota hai  
+6. **Gate reached**
+
+👉 Physics break nahi hoti  
+👉 **Linear scaling break hoti hai**
+
+---
+
+## 📌 Important terms (simple + safe)
+
+| Term | Simple meaning |
 |----|----|
-| **Effective Inertia** | Resistance arising from energy–momentum accumulation |
-| **Energy Density Proxy** | Trend-level metric combining energy & confinement scale |
-| **Gate Condition** | Boundary where existing mechanisms become insufficient |
-| **Saturation Zone** | Region where added energy yields diminishing motion |
+| **Effective Inertia** | Energy ki wajah se aane wali resistance |
+| **Energy Density Proxy** | Trend-level energy + confinement signal |
+| **Gate Condition** | Jahan existing methods kaam nahi karte |
+| **Saturation Zone** | Jahan aur power dena bekaar ho jata hai |
 
-⚠️ These are **engineering constructs**, not gravitational claims.
-
----
-
-## 🧪 WHAT THIS KERNEL ACTUALLY DOES
-
-<table>
-<tr><td>✅</td><td>Resolves motion per θ (crank-angle)</td></tr>
-<tr><td>✅</td><td>Tracks energy vs resistance growth</td></tr>
-<tr><td>✅</td><td>Identifies non-linear saturation zones</td></tr>
-<tr><td>✅</td><td>Maps material & energy scaling requirements</td></tr>
-<tr><td>✅</td><td>Flags regions needing new mechanisms</td></tr>
-</table>
+⚠️ Yeh engineering constructs hain, gravity claims nahi.
 
 ---
 
-## 🚫 WHAT IT EXPLICITLY DOES NOT CLAIM
+## 🧪 What this kernel actually does
 
-<table>
-<tr><td>❌</td><td>Energy storage or confinement</td></tr>
-<tr><td>❌</td><td>Gravity generation</td></tr>
-<tr><td>❌</td><td>Singularity or black-hole creation</td></tr>
-<tr><td>❌</td><td>Violation of known physical laws</td></tr>
-</table>
+- ✅ Per-θ (crank angle) behaviour resolve karta hai  
+- ✅ Energy vs resistance trend track karta hai  
+- ✅ Non-linear saturation zones identify karta hai  
+- ✅ Material + energy scaling direction batata hai  
+- ✅ New mechanism ki zarurat flag karta hai  
 
-Boundary ≠ weakness  
+---
+
+## 🚫 What this kernel does NOT claim
+
+- ❌ Energy storage / confinement  
+- ❌ Gravity ya black-hole creation  
+- ❌ New physics discovery  
+- ❌ CFD / gas dynamics  
+- ❌ ECU replacement  
+
+Boundary ≠ limitation  
 Boundary = clarity
 
 ---
 
-# 📊 MAJOR FINDINGS — NICHE BUT CRITICAL
+## 📊 Major findings (nichod)
 
-| Finding | Why It Matters |
+| Finding | Kyun important hai |
 |----|----|
-| Energy can raise resistance faster than output | Explains diminishing returns at extremes |
-| Inertia behaves like a saturation signal | Early warning before failure |
-| θ-domain reveals causality cleanly | Avoids time-step artifacts |
-| Gates can be mapped without opening them | Safe extrapolation |
-| Direction can be known without realization | Saves years of wrong work |
+| Energy resistance ban sakti hai | Diminishing returns samajh aate hain |
+| Inertia saturation signal hai | Early failure warning milti hai |
+| θ-domain causality clean dikhata hai | Time-step artefacts nahi |
+| Gate map kiya ja sakta hai | Bina gate khole |
+| Direction pehle pata chalti hai | Time & paisa bachta hai |
 
 ---
 
-## 📐 TREND FIDELITY (HONEST)
+## 📐 Trend fidelity (honest view)
 
-| Aspect | Trend Fidelity | Interpretation |
+| Aspect | Trend accuracy | Matlab |
 |----|----|----|
 | Geometry (V-θ) | 🟢🟢🟢🟢🟢 ~95% | Solid |
-| Energy-Inertia trend | 🟢🟢🟢🟢 85% | Reliable |
+| Energy–inertia trend | 🟢🟢🟢🟢 ~85% | Reliable |
 | Resistance escalation | 🟢🟢🟢🟢 | Strong |
 | Saturation detection | 🟢🟢🟢🟢🟢 | Core strength |
-| Absolute numbers | 🟡 | Not the goal |
+| Absolute numbers | 🟡 | Goal nahi |
 
 ---
 
-## ⚖️ POSITIONING (VERY IMPORTANT)
+## 🧮 Compute scale perspective (simple)
 
-| Tool | What it Answers |
+| System | Kya karta hai |
 |----|----|
-| Textbook | What is theoretically possible |
-| **THIS KERNEL** | Where scaling breaks |
-| GT-Power | What happens in detail |
-| ANSYS CFD | Why it happens locally |
+| ECU (today) | Fast control, kam soch |
+| **This kernel** | Direction & gate mapping |
+| Supercomputer | Same logic, zyada detail |
 
-👉 This kernel **decides if GT-Power / ANSYS should even be run**
-
----
-
-## 🧠 INTERPRETATION RULE
-
-> **This framework does not open new physics.  
-It maps where new physics would be required.**
-
-Any future mechanism (material, confinement, control)  
-is treated as **external**.
+⚠️ Zyada compute = zyada clarity  
+❌ Zyada compute = magic nahi
 
 ---
 
-## 🚀 CONTROLLED SCI-FI NOTE (INTENTIONAL)
+## ⚖️ Where this fits
 
-🧬 *If* a future mechanism enables temporary energy confinement,  
-🧠 *then* this kernel already tells **how much**, **where**, and **why**.
+| Tool | Role |
+|----|----|
+| Textbook | Theory |
+| **This kernel** | Decide karna |
+| GT-Power | Detail simulation |
+| ANSYS CFD | Local physics |
 
-No fantasy.  
-Only **coordinates on the map**.
-
----
-
-## 🧪 USE-CASES
-
-✔️ Extreme engine concept screening  
-✔️ Early saturation detection  
-✔️ Real-time warning dashboards  
-✔️ Research boundary exploration  
-✔️ Digital-twin reasoning backends  
+👉 **Yeh kernel decide karta hai  
+GT-Power / ANSYS chalana bhi chahiye ya nahi**
 
 ---
 
-## 🧠 FINAL STATEMENT
+## 🧠 Interpretation rule (most important)
+
+> **Yeh framework gate nahi kholta.  
+Yeh sirf batata hai gate kahan hai.**
+
+Future mechanism (material, confinement, control)
+sab **external** maana gaya hai.
+
+---
+
+## 🚀 Controlled sci-fi note (safe)
+
+🧬 *Agar* future mein koi technology energy ko thodi der ke liye rok paaye,  
+🧠 *toh* yeh kernel pehle se batata hai:
+**kitni energy, kahan, aur kyun.**
+
+Fantasy nahi.  
+Sirf map.
+
+---
+
+## 🧪 Use-cases
+
+- Engine concept screening  
+- Early saturation detection  
+- Real-time warning dashboards  
+- Digital-twin reasoning backends  
+- Research boundary exploration  
+
+---
+
+## 🧠 Final line
 
 > **This is not a simulator.  
 This is a gate-finder.**
 
-Wrong ideas die early.  
-Right ideas get sharper.
+Galat ideas jaldi marte hain.  
+Sahi ideas sharp ho jaate hain.
 
-⭐ Watch this repository if you believe  
-thinking should come before simulating.
+⭐ Watch this repo if you believe  
+sochna, simulate karne se pehle aana chahiye.
